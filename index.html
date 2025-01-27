@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educosta - Online Courses</title>
+    <title>kowneyn college scientific</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,12 +14,15 @@
             <div class="logo">
                 <h1>kowneyn college</h1>
             </div>
-            <nav class="navbar">
+            <nav class="navbar active">
                 <a href="#">Home</a>
                 <a href="#about-section">About us</a>
                 <a href="#courses-section">Courses</a>
                <button class="nav-button"> <a href="#contact-section">Contact Us</a> </button> 
             </nav>
+            
+            <i class="fa-solid fa-bars  menu-toggle"></i>
+           
            
         </div>
     </header>
@@ -30,7 +33,7 @@
         
             <div class="column1">
                 <h1 class="hero-text">A new way to learn & get knowledge</h1>
-                <p>Kowneyn college is here for you with various courses &materials from skilled tutors.
+                <p class="hero-p">Kowneyn college is here for you with various courses &materials from skilled tutors.
                     Kowneyn College is dedicated to providing high-quality education and fostering an environment of growth, creativity, and innovation.
                 </p>
                 <div class="cta-buttons">
@@ -124,7 +127,7 @@
       <div class="card">
         <img src="https://i.pinimg.com/736x/ef/14/26/ef1426f413693babefec302ab35328d4.jpg" 
         alt="Card 4" class="card-img">
-        <h2 class="card-title">Mathmatics</h2>
+        <h2 class="card-title">Mathematics</h2>
       </div>
     </div>
   </section>
@@ -173,14 +176,17 @@
     <div class="footer-bottom">
       <p>&copy; 2025 Kowneyn College. All rights reserved.</p>
     </div>
-  </footer>
+  </footer> 
 
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
 
-
-
-
-
-   
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+ 
 </body>
 </html>
 

@@ -37,6 +37,8 @@ body {
     color: #333;
 }
 
+
+
 .nav-button  {
     width: 140px;
     padding: 9px;
@@ -49,6 +51,11 @@ body {
     border-radius: 35px;
    
 }
+
+.menu-toggle{
+  display: none;
+}
+
 .hero-section {
     display: flex;
     padding: 2rem 1rem;
@@ -181,17 +188,8 @@ p{
     margin-top: 20px;
   }
   
-  /* @media (max-width: 768px) {
-    .about-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .card {
-      max-width: 100%;
-    }
-  } */
-
+ 
+   
 
   /* courses section style */
 
@@ -389,8 +387,43 @@ p{
 
   @media (max-width: 768px) {
 
+    .navbar {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+  }
+
+  .navbar.active {
+      display: flex;
+  }
+
+  .navbar a {
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
+      width: 100%;
+      text-align: center;
+  }
+
+    .logo h1 {
+      color: #007bff;
+      font-size: 14px;
+  }
+
+  .menu-toggle {
+    display: flex;
+}
+
+
+.nav-button {
+  display: none;
+}
+
+
+
     .hero-section {
-        
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -398,7 +431,12 @@ p{
 
     .hero-text {
         width: 100%;
-        font-size: 20px;
+        font-size: 24px;
+    }
+    .hero-p{
+      
+      width: 400px;
+      
     }
 
     .cta-buttons button {
@@ -411,6 +449,9 @@ p{
     
       .footer-section {
         text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
       }
 
       .contact-container {
